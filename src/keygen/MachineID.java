@@ -117,11 +117,11 @@ public class MachineID {
         return serial;
     }
     private static String machine_uuid() {
-        return exec("wmic csproduct MachineID uuid", "UUID");
+        return exec("wmic csproduct get uuid", "UUID");
     }
 
     private static String serialNumber() {
-        return exec("wmic bios MachineID serialnumber", "SerialNumber");
+        return exec("wmic bios get serialnumber", "SerialNumber");
     }
 
     private static String exec(String str, String str2) {
