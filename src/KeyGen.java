@@ -9,7 +9,7 @@ import java.awt.datatransfer.Transferable;
 
 public class KeyGen {
     private JTextField serial;
-    private JPanel panel1;
+    private JPanel jPanel;
     private JLabel tip;
 
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class KeyGen {
         final int width = 350;
         frame.setLocation(screenWidth - width / 2, screenHeight - height / 2);
         KeyGen keyGen = new KeyGen();
-        frame.setContentPane(keyGen.panel1);
+        frame.setContentPane(keyGen.jPanel);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
